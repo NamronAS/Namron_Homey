@@ -1,0 +1,177 @@
+[     
+  {
+    "id":"thermostat_regulator_mode",
+    "label":{ "en": "Thermostat/Regulator mode"},
+    "type": "dropdown",
+    "value": "0",
+    "values" : [
+      { "id":"0", "label": { "en": "Thermostat Mode" } },
+      { "id":"1", "label": { "en": "Regulator Heating" } }
+    ]
+  }, 
+    {
+        "id": "regulator",
+        "type": "dropdown",
+        "value": "30",  
+        "values":[
+          { "id":"0", "label": { "en": "OFF" } },
+          { "id":"1", "label": { "en": "1 min" } },
+          { "id":"2", "label": { "en": "2 min" } },
+          { "id":"3", "label": { "en": "3 min" } },
+          { "id":"4", "label": { "en": "4 min" } },
+          { "id":"5", "label": { "en": "5 min" } },
+          { "id":"6", "label": { "en": "6 min" } },
+          { "id":"7", "label": { "en": "7 min" } },
+          { "id":"8", "label": { "en": "8 min" } },
+          { "id":"9", "label": { "en": "9 min" } },
+          { "id":"10", "label": { "en": "10 min" } },
+          { "id":"11", "label": { "en": "11 min" } },
+          { "id":"12", "label": { "en": "12 min" } },
+          { "id":"13", "label": { "en": "13 min" } },
+          { "id":"14", "label": { "en": "14 min" } },
+          { "id":"15", "label": { "en": "15 min" } },
+          { "id":"16", "label": { "en": "16 min" } },
+          { "id":"17", "label": { "en": "17 min" } },
+          { "id":"18", "label": { "en": "18 min" } },
+          { "id":"19", "label": { "en": "19 min" } },
+          { "id":"20", "label": { "en": "20 min" } },
+          { "id":"21", "label": { "en": "21 min" } },
+          { "id":"22", "label": { "en": "22 min" } },
+          { "id":"23", "label": { "en": "23 min" } },
+          { "id":"24", "label": { "en": "24 min" } },
+          { "id":"25", "label": { "en": "25 min" } },
+          { "id":"26", "label": { "en": "26 min" } },
+          { "id":"27", "label": { "en": "27 min" } },
+          { "id":"28", "label": { "en": "28 min" } },
+          { "id":"29", "label": { "en": "29 min" } },
+          { "id":"30", "label": { "en": "30 min" } }
+
+        ],
+        "units" : { "en":"min" },
+        "label": { "en": "Regulator heating minute" },
+        "hint" : { "en": "" }
+    }, 
+    {
+        "id": "sensor_mode",
+        "type": "dropdown",
+        "value": "f",
+        "label": { "en": "Sensor mode " },
+        "values": [
+          {
+            "id": "a",
+            "label": { "en": "A " }
+          },
+          {
+            "id": "f",
+            "label": { "en": "F " }
+          },
+          {
+            "id": "af",
+            "label": { "en": "AF " }
+          },
+          {
+            "id": "a2",
+            "label": { "en": "A2 " }
+          },{
+            "id": "a2f",
+            "label": { "en": "A2F " }
+          }, 
+          {
+              "id": "p",
+              "label":{ "en": "P " }
+          }
+        ]
+    },
+    {
+        "id": "run_mode",
+        "type": "dropdown",
+        "value": "program",
+        "label": { "en": "Drive mode " },
+        "values": [
+          {
+            "id": "manual",
+            "label": { "en": "Manual" }
+          },
+          {
+            "id": "program",
+            "label": { "en": "Program" }
+          } 
+        ]
+    },
+ 
+    {
+      "id": "frost_celsius",
+      "type": "number",
+      "value": 5, 
+      "min": 5,
+      "max": 10,
+      "step": 1,
+      "units":{
+        "en": "°C"
+      },
+      "label": { "en": "Frost target Celsius (°C)" }
+    },
+    {
+      "id" : "lcd_backlight_wait",
+      "label": { "en": "LCD backlight standby" },
+      "type": "dropdown",
+      "units" : { "en" : "%" },
+      "value": "10",
+      "values": [
+        {
+          "id": "10",
+          "label": { "en": "10%" }
+        },
+        {
+          "id": "20",
+          "label": { "en": "20%" }
+        } ,
+        {
+          "id": "30",
+          "label": { "en": "30%" }
+        } ,
+        {
+          "id": "40",
+          "label": { "en": "40%" }
+        } ,
+        {
+          "id": "50",
+          "label": { "en": "50%" }
+        },
+        {
+          "id": "60",
+          "label": { "en": "60%" }
+        },
+        {
+          "id": "70",
+          "label": { "en": "70%" }
+        },
+        {
+          "id": "80",
+          "label": { "en": "80%" }
+        },
+        {
+          "id": "90",
+          "label": { "en": "90%" }
+        },
+        {
+          "id": "100",
+          "label": { "en": "100%" }
+        }
+      ] 
+    },
+    
+    {
+      "type": "group",
+      "label": { "en": "Window" },
+      "children": [
+        {
+          "id":"window_check",
+          "label":{ "en": "Window check"},
+          "type": "checkbox",
+          "value": false
+        }
+      ]
+    }
+]
+ 
