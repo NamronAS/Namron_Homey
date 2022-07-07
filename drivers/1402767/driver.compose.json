@@ -1,0 +1,58 @@
+{ 
+  "id": "1402767",
+  "name": {
+    "en": "1402767 - Zigbee 2 pol Dimmer"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "images": {
+    "small": "/drivers/1402767/assets/images/small.png",
+    "large": "/drivers/1402767/assets/images/large.png"
+  },
+  "energy": {
+    "approximation": {
+      "usageOn": 0,
+      "usageOff": 0
+    }
+  },
+  "platforms": ["local", "cloud"],
+  "connectivity": ["zigbee"],
+  "zigbee": {
+    "manufacturerName": [
+      "NAMRON AS",
+      "NAMRON  AS",
+      "NAMRON As",
+      "Namron AS",
+      "Namron As",
+      "namron as",
+      "Shyugj"
+    ],
+    "productId": [
+      "Dimmer-Switch-ZB3.0",
+      "1402767"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          768],
+        "bindings": [6, 8]
+      }
+    }, 
+    "learnmode": {
+      "instruction": {
+        "en": "To Include, quick press Config Button for two times."
+      }
+    }
+  }
+}
