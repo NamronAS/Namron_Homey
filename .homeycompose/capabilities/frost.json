@@ -1,0 +1,24 @@
+{
+  "type": "boolean",
+  "title": { "en": "FROST-protection" },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "button",
+  "uiQuickAction": false,
+  "values": [
+    {
+      "id": "off",
+      "title": {
+        "en": "OFF",
+        "zh": "关闭"
+      }
+    }, 
+    {
+      "id": "on",
+      "title": {
+        "en": "ON",
+        "zh": "开启"
+      }
+    }
+  ]
+}

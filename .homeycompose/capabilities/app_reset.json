@@ -1,0 +1,23 @@
+{
+  "type": "boolean",
+  "title": { "en": "Switch" },
+  "getable": true,
+  "setable": true,
+  "uiQuickAction": true,
+  "values": [
+    {
+      "id": "off",
+      "title": {
+        "en": "OFF",
+        "zh": "关闭"
+      }
+    }, 
+    {
+      "id": "on",
+      "title": {
+        "en": "ON",
+        "zh": "开启"
+      }
+    }
+  ]
+}

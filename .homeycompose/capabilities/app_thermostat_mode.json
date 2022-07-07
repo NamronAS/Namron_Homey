@@ -1,0 +1,22 @@
+{
+  "type": "enum",
+  "title": { "en": "My thermostat mode" },
+  "getable": true,
+  "setable": true,
+  "uiComponent": "picker",
+  "uiQuickAction": true,
+  "values": [
+    {
+      "id": "heat",
+      "title": {
+        "en": "Heat" 
+      }
+    },
+    {
+      "id": "cool",
+      "title": {
+        "en": "Cool"
+      }
+    } 
+  ]
+}
