@@ -1,7 +1,7 @@
 {
   "id": "net.filllip-namron",
-  "version": "2.2.37",
-  "compatibility": ">=5.0.0",
+  "version": "2.2.40",
+  "compatibility": ">=7.4.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
   "name": {
@@ -22,7 +22,8 @@
       "namron",
       "namron as",
       "namronas",
-      "Namron AS"
+      "Namron AS",
+      "NAMRON AS"
     ]
   },
   "permissions": [

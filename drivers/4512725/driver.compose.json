@@ -1,7 +1,8 @@
 {
   "id": "4512725",
   "name": {
-    "en": "4512725 - Z-Wave Plug Thermostat"
+    "en": "4512725 - Z-Wave Plug Thermostat",
+    "no": "4512725 - Z-Wave Termostatplugg"
   },
   "class": "socket",
   "capabilities": [

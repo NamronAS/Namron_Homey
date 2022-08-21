@@ -1,6 +1,7 @@
 {
   "name": {
-    "en": "4512749 - Zigbee Wall Plug"
+    "en": "4512749 - Zigbee Plug Thermostat",
+    "no": "4512749 - Zigbee Termostatplugg"
   },
   "class": "socket",
   "capabilities": [

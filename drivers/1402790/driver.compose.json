@@ -1,8 +1,8 @@
 {
   "class": "socket",
   "name": {
-    "en": "Namron Stove Guard",
-    "no": "Namron Komfyrvakt"
+    "en": "140279* - Namron Stove Guard",
+    "no": "140279* - Namron Komfyrvakt"
   },
   "capabilities": [
     "onoff",
@@ -34,23 +34,18 @@
 "icon": "{{driverAssetsPath}}/icon.svg",
 
   "zigbee": {
-    "manufacturerName": "Brun Holding",
+    "manufacturerName": "NAMRON AS",
     "productId": [
-      "Power Control Unit"
+      "1402790"
     ],
     "endpoints": {
       "1": {
         "clusters": [
+          1,
           6,
+          1026,
           1794,
           2820
-        ],
-        "bindings": []
-      },
-      "2": {
-        "clusters": [
-          1,
-          1026
         ],
         "bindings": []
       }

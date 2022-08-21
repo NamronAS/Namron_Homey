@@ -35,7 +35,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
     this._registerAwayMode()
 
     this.controlTypeValue = await this.zclNode.endpoints[1].clusters.thermostat.readAttributes(
-      'controlType')
+      'controlType').catch(this.error)
     this._registerControlType()
 
     this._registerRoomSensor()
@@ -84,7 +84,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
             }
           }
 
-          return this._thermostatCluster().writeAttributes(payload)
+          return this._thermostatCluster().writeAttributes(payload).catch(this.error)
         })
       })
   }
@@ -126,7 +126,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
       this.isNotAwayValue = true
       return this.zclNode.endpoints[1].clusters.thermostat.writeAttributes({
         systemMode: value,
-      })
+      }).catch(this.error)
     })
   }
 
@@ -345,7 +345,7 @@ class ZigBeeThermostat extends ZigBeeDevice {
 
       return this._thermostatCluster().writeAttributes({
         systemMode: isOn ? 'heat' : 'off',
-      })
+      }).catch(this.error)
     })
   }
 

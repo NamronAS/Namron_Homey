@@ -1,8 +1,8 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "net.filllip-namron",
-  "version": "2.2.37",
-  "compatibility": ">=5.0.0",
+  "version": "2.2.40",
+  "compatibility": ">=7.4.0",
   "sdk": 3,
   "brandColor": "#C0C81D",
   "name": {
@@ -23,7 +23,8 @@
       "namron",
       "namron as",
       "namronas",
-      "Namron AS"
+      "Namron AS",
+      "NAMRON AS"
     ]
   },
   "permissions": [
@@ -10848,8 +10849,8 @@
     {
       "class": "socket",
       "name": {
-        "en": "Namron Stove Guard",
-        "no": "Namron Komfyrvakt"
+        "en": "140279* - Namron Stove Guard",
+        "no": "140279* - Namron Komfyrvakt"
       },
       "capabilities": [
         "onoff",
@@ -10880,23 +10881,18 @@
       },
       "icon": "/drivers/1402790/assets/icon.svg",
       "zigbee": {
-        "manufacturerName": "Brun Holding",
+        "manufacturerName": "NAMRON AS",
         "productId": [
-          "Power Control Unit"
+          "1402790"
         ],
         "endpoints": {
           "1": {
             "clusters": [
+              1,
               6,
+              1026,
               1794,
               2820
-            ],
-            "bindings": []
-          },
-          "2": {
-            "clusters": [
-              1,
-              1026
             ],
             "bindings": []
           }
@@ -13394,7 +13390,8 @@
     {
       "id": "4512725",
       "name": {
-        "en": "4512725 - Z-Wave Plug Thermostat"
+        "en": "4512725 - Z-Wave Plug Thermostat",
+        "no": "4512725 - Z-Wave Termostatplugg"
       },
       "class": "socket",
       "capabilities": [
@@ -14191,7 +14188,8 @@
     },
     {
       "name": {
-        "en": "4512749 - Zigbee Wall Plug"
+        "en": "4512749 - Zigbee Plug Thermostat",
+        "no": "4512749 - Zigbee Termostatplugg"
       },
       "class": "socket",
       "capabilities": [
@@ -14272,6 +14270,7 @@
         "zigbee"
       ],
       "images": {
+        "xlarge": "/drivers/5401392/assets/images/xlarge.png",
         "small": "/drivers/5401392/assets/images/small.png",
         "large": "/drivers/5401392/assets/images/large.png"
       },
@@ -14783,6 +14782,7 @@
         "zigbee"
       ],
       "images": {
+        "xlarge": "/drivers/5401393/assets/images/xlarge.png",
         "small": "/drivers/5401393/assets/images/small.png",
         "large": "/drivers/5401393/assets/images/large.png"
       },
@@ -15294,6 +15294,7 @@
         "zigbee"
       ],
       "images": {
+        "xlarge": "/drivers/5401394/assets/images/xlarge.png",
         "small": "/drivers/5401394/assets/images/small.png",
         "large": "/drivers/5401394/assets/images/large.png"
       },
@@ -15805,6 +15806,7 @@
         "zigbee"
       ],
       "images": {
+        "xlarge": "/drivers/5401395/assets/images/xlarge.png",
         "small": "/drivers/5401395/assets/images/small.png",
         "large": "/drivers/5401395/assets/images/large.png"
       },

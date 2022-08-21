@@ -96,7 +96,7 @@ class ZG9093ADevice extends ZigBeeDevice {
 
       return this._thermostatCluster().writeAttributes({
         systemMode: isOn ? 'heat' : 'off',
-      })
+      }).catch(this.error)
     })
 
     // meter_power
@@ -231,7 +231,7 @@ class ZG9093ADevice extends ZigBeeDevice {
       let payload = {
         occupiedHeatingSetpoint: value * 100,
       }
-      return this._thermostatCluster().writeAttributes(payload)
+      return this._thermostatCluster().writeAttributes(payload).catch(this.error)
     })
   }
 
@@ -336,7 +336,7 @@ class ZG9093ADevice extends ZigBeeDevice {
       let payload = {
         systemMode: value,
       }
-      return this._thermostatCluster().writeAttributes(payload)
+      return this._thermostatCluster().writeAttributes(payload).catch(this.error)
     })
   }
 

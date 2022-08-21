@@ -1,0 +1,91 @@
+stages:
+  - prepare
+  - lint
+  - build
+
+variables:
+  NODE_VERSION: 16
+
+install-js-dependencies:
+  stage: prepare
+  image: "node:${NODE_VERSION}"
+  interruptible: true
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: ${CI_PROJECT_PATH_SLUG}_npm
+    paths:
+      - node_modules/
+  before_script:
+    # Set npm login credentials
+    - echo "username=${NPM_USER}" >> .npmrc
+    - echo "_password=$(echo -n ${NPM_PASS} | base64)" >> .npmrc
+    - echo "//${NPM_REGISTRY}/npm:_authToken=${NPM_TOKEN}" >> .npmrc
+    - echo "email=${NPM_EMAIL}" >> .npmrc
+  script:
+    # Install the dependencies
+    - npm ci
+  after_script:
+    - rm .npmrc
+  tags:
+    - docker
+  except:
+    - schedules
+    - tags
+
+npm-audit:
+  stage: lint
+  image: "node:${NODE_VERSION}"
+  interruptible: true
+  script:
+    - npm install -g better-npm-audit
+    - better-npm-audit audit --production
+  tags:
+    - docker
+
+eslint:
+  stage: lint
+  image: "node:${NODE_VERSION}"
+  interruptible: true
+  needs:
+    - install-js-dependencies
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: ${CI_PROJECT_PATH_SLUG}_npm
+    paths:
+      - node_modules/
+    policy: pull
+  script:
+    - npm run app:lint
+  tags:
+    - docker
+  except:
+    - schedules
+    - master
+    - production
+    - tags
+
+build:
+  stage: build
+  image: "node:${NODE_VERSION}"
+  interruptible: true
+  needs:
+    - install-js-dependencies
+  cache:
+    key:
+      files:
+        - package-lock.json
+      prefix: ${CI_PROJECT_PATH_SLUG}_npm
+    paths:
+      - node_modules/
+    policy: pull
+  script:
+    - npm run app:build
+  tags:
+    - docker
+  except:
+    - schedules
+    - tags

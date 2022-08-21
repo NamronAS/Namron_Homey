@@ -1,7 +1,7 @@
 {
   "ids": {
-    "modelId": "Power Control Unit",
-    "manufacturerName": "Brun Holding"
+    "modelId": "1402790",
+    "manufacturerName": "NAMRON AS"
   },
   "endpoints": {
     "endpointDescriptors": [
@@ -16,22 +16,8 @@
           3,
           6,
           1794,
-          2820
-        ],
-        "outputClusters": [
-          3
-        ]
-      },
-      {
-        "endpointId": 2,
-        "applicationProfileId": 260,
-        "applicationDeviceId": 770,
-        "applicationDeviceVersion": 0,
-        "_reserved1": 0,
-        "inputClusters": [
-          0,
+          2820,
           1,
-          3,
           1026
         ],
         "outputClusters": [
@@ -99,16 +85,18 @@
                 "acl": [
                   "readable"
                 ],
-                "id": 0
+                "id": 0,
+                "name": "identifyTime",
+                "value": 0
               }
             ],
             "commandsGenerated": [
-              0
+              "identifyQuery.response"
             ],
             "commandsReceived": [
-              0,
-              1,
-              64
+              "identify",
+              "identifyQuery",
+              "triggerEffect"
             ]
           },
           "onOff": {
@@ -225,70 +213,6 @@
             ],
             "commandsGenerated": [],
             "commandsReceived": []
-          }
-        },
-        "bindings": {
-          "identify": {
-            "attributes": [
-              {
-                "acl": [
-                  "readable"
-                ],
-                "id": 0
-              }
-            ],
-            "commandsGenerated": [
-              0
-            ],
-            "commandsReceived": [
-              0,
-              1,
-              64
-            ]
-          }
-        }
-      },
-      "2": {
-        "clusters": {
-          "basic": {
-            "attributes": [
-              {
-                "acl": [
-                  "readable"
-                ],
-                "id": 0,
-                "name": "zclVersion",
-                "value": 2
-              },
-              {
-                "acl": [
-                  "readable"
-                ],
-                "id": 4,
-                "name": "manufacturerName",
-                "value": "Brun Holding"
-              },
-              {
-                "acl": [
-                  "readable"
-                ],
-                "id": 5,
-                "name": "modelId",
-                "value": "Fire Fence"
-              },
-              {
-                "acl": [
-                  "readable"
-                ],
-                "id": 7,
-                "name": "powerSource",
-                "value": "battery"
-              }
-            ],
-            "commandsGenerated": [],
-            "commandsReceived": [
-              "factoryReset"
-            ]
           },
           "powerConfiguration": {
             "attributes": [
@@ -298,29 +222,11 @@
                 ],
                 "id": 33,
                 "name": "batteryPercentageRemaining",
-                "value": 200
+                "value": 188
               }
             ],
             "commandsGenerated": [],
             "commandsReceived": []
-          },
-          "identify": {
-            "attributes": [
-              {
-                "acl": [
-                  "readable"
-                ],
-                "id": 0
-              }
-            ],
-            "commandsGenerated": [
-              0
-            ],
-            "commandsReceived": [
-              0,
-              1,
-              64
-            ]
           },
           "temperatureMeasurement": {
             "attributes": [
@@ -360,16 +266,18 @@
                 "acl": [
                   "readable"
                 ],
-                "id": 0
+                "id": 0,
+                "name": "identifyTime",
+                "value": 0
               }
             ],
             "commandsGenerated": [
-              0
+              "identifyQuery.response"
             ],
             "commandsReceived": [
-              0,
-              1,
-              64
+              "identify",
+              "identifyQuery",
+              "triggerEffect"
             ]
           }
         }
