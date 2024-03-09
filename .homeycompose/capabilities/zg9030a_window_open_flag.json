@@ -1,6 +1,7 @@
 {
   "title": {
-    "en": "Window open flag"
+    "en": "Window open flag",
+    "no": "Status vindu"
   },
   "type": "string",
   "setable": true,

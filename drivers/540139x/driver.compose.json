@@ -1,6 +1,7 @@
 {
   "name": {
-    "en": "540139* Zigbee Panelovn"
+    "en": "540139* Zigbee Panelovn",
+    "no": "540139* Zigbee Panelovn"
   },
   "class": "thermostat",
   "capabilities": [
@@ -73,7 +74,7 @@
       "image": "/drivers/540139x/assets/learnmode.svg",
       "instruction": {
         "en": "Press and hold down the OK button until the Wireless indicator flashes slowly.\n\nIf pairing is not started, press and hold down the OK button again.",
-        "no": "Trykk og hold nede OK knappen inntill indikatoren for trådløs kommunikasjon blinker.\n\n Om parringen ikke starter, trykk og holde nede OK knappen igjen."
+        "no": "Trykk og hold nede OK knappen inntil indikatoren for trådløs kommunikasjon blinker.\n\n Om paringen ikke starter, trykk og holde nede OK knappen igjen."
       }
     }
   },

@@ -2,75 +2,87 @@
   {
     "type": "group",
     "label": {
-      "en": "Weekly Schedule Settings"
+      "en": "Weekly Schedule Settings",
+      "no": "Ukesprogram innstillinger"
     },
     "children": [
       {
         "id": "repeat",
         "type": "dropdown",
         "label": {
-          "en": "Repeat"
+          "en": "Repeat",
+          "no": "Gjenta"
         },
         "value": "sunday",
         "values": [
           {
             "id": "everyday",
             "label": {
-              "en": "Every day"
+              "en": "Every day",
+              "no": "Hver dag"
             }
           },
           {
             "id": "weekday",
             "label": {
-              "en": "Every weekday"
+              "en": "Every weekday",
+              "no": "Hver ukedag"
             }
           },
           {
             "id": "weekend",
             "label": {
-              "en": "Every weekend"
+              "en": "Every weekend",
+              "no": "Hver helg"
             }
           },
           {
             "id": "sunday",
             "label": {
-              "en": "Sunday"
+              "en": "Sunday",
+              "no": "Søndag"
             }
           },
           {
             "id": "monday",
             "label": {
-              "en": "Monday"
+              "en": "Monday",
+              "no": "Mandag"
             }
           },
           {
             "id": "tuesday",
             "label": {
-              "en": "Tuesday"
+              "en": "Tuesday",
+              "no": "Tirsdag"
             }
           },
           {
             "id": "wednesday",
             "label": {
-              "en": "Wednesday"
+              "en": "Wednesday",
+              "no": "Onsdag"
             }
           },
           {
             "id": "thursday",
             "label": {
-              "en": "Thursday"
+              "en": "Thursday",
+              "no": "Torsdag"
             }
           },
           {
             "id": "friday",
             "label": {
-              "en": "Friday"
+              "en": "Friday",
+              "no": "Fredag"
             }
           },
           {
             "id": "saturday",
             "label": {
-              "en": "Saturday"
+              "en": "Saturday",
+              "no": "Lørdag"
             }
           }
         ]
@@ -80,14 +92,16 @@
   {
     "type": "group",
     "label": {
-      "en": "First Weekly Schedule"
+      "en": "First Weekly Schedule",
+      "no": "Første ukesprogram"
     },
     "children": [
       {
         "id": "first_hour",
         "type": "number",
         "label": {
-          "en": "Hour"
+          "en": "Hour",
+          "no": "Time"
         },
         "value": 7,
         "min": 0,
@@ -98,7 +112,8 @@
         "id": "first_minute",
         "type": "number",
         "label": {
-          "en": "Minute"
+          "en": "Minute",
+          "no": "Minutt"
         },
         "value": 30,
         "min": 0,
@@ -109,7 +124,8 @@
         "id": "first_target",
         "type": "number",
         "label": {
-          "en": "Target"
+          "en": "Target",
+          "no": "Mål"
         },
         "value": 30,
         "min": 5,
@@ -124,14 +140,16 @@
   {
     "type": "group",
     "label": {
-      "en": "Second Weekly Schedule"
+      "en": "Second Weekly Schedule",
+      "no": "Andre ukesprogram"
     },
     "children": [
       {
         "id": "second_hour",
         "type": "number",
         "label": {
-          "en": "Hour"
+          "en": "Hour",
+          "no": "Time"
         },
         "value": 12,
         "min": 0,
@@ -142,7 +160,8 @@
         "id": "second_minute",
         "type": "number",
         "label": {
-          "en": "Minute"
+          "en": "Minute",
+          "no": "Minutt"
         },
         "value": 0,
         "min": 0,
@@ -153,7 +172,8 @@
         "id": "second_target",
         "type": "number",
         "label": {
-          "en": "Target"
+          "en": "Target",
+          "no": "Mål"
         },
         "value": 25,
         "min": 5,
@@ -168,14 +188,16 @@
   {
     "type": "group",
     "label": {
-      "en": "Third Weekly Schedule"
+      "en": "Third Weekly Schedule",
+      "no": "Tredje ukesprogram"
     },
     "children": [
       {
         "id": "third_hour",
         "type": "number",
         "label": {
-          "en": "Hour"
+          "en": "Hour",
+          "no": "Time"
         },
         "value": 18,
         "min": 0,
@@ -186,7 +208,8 @@
         "id": "third_minute",
         "type": "number",
         "label": {
-          "en": "Minute"
+          "en": "Minute",
+          "no": "Minutt"
         },
         "value": 0,
         "min": 0,
@@ -197,7 +220,8 @@
         "id": "third_target",
         "type": "number",
         "label": {
-          "en": "Target"
+          "en": "Target",
+          "no": "Mål"
         },
         "value": 28,
         "min": 5,
@@ -241,7 +265,8 @@
         "id": "fourth_target",
         "type": "number",
         "label": {
-          "en": "Target"
+          "en": "Target",
+          "no": "Mål"
         },
         "value": 20,
         "min": 5,
@@ -256,7 +281,8 @@
   {
     "type": "group",
     "label": {
-      "en": "Device Settings"
+      "en": "Device Settings",
+      "no": "Enhetsinnstillinger"
     },
     "children": [
       {
@@ -264,49 +290,57 @@
         "type": "dropdown",
         "value": "one",
         "label": {
-          "en": "Operate display brightness"
+          "en": "Operate display brightness",
+          "no": "Skjermstyrke"
         },
         "values": [
           {
             "id": "one",
             "label": {
-              "en": "Level 1"
+              "en": "Level 1",
+              "no": "Nivå 1"
             }
           },
           {
             "id": "two",
             "label": {
-              "en": "Level 2"
+              "en": "Level 2",
+              "no": "Nivå 2"
             }
           },
           {
             "id": "three",
             "label": {
-              "en": "Level 3"
+              "en": "Level 3",
+              "no": "Nivå 3"
             }
           },
           {
             "id": "four",
             "label": {
-              "en": "Level 4"
+              "en": "Level 4",
+              "no": "Nivå 4"
             }
           },
           {
             "id": "five",
             "label": {
-              "en": "Level 5"
+              "en": "Level 5",
+              "no": "Nivå 5"
             }
           },
           {
             "id": "six",
             "label": {
-              "en": "Level 6"
+              "en": "Level 6",
+              "no": "Nivå 6"
             }
           },
           {
             "id": "seven",
             "label": {
-              "en": "Level 7"
+              "en": "Level 7",
+              "no": "Nivå 7"
             }
           }
         ]
@@ -316,19 +350,22 @@
         "type": "dropdown",
         "value": "disabled",
         "label": {
-          "en": "Display auto off activation"
+          "en": "Display auto off activation",
+          "no": "Skru lyset i displayet av/på"
         },
         "values": [
           {
             "id": "disabled",
             "label": {
-              "en": "Disabled"
+              "en": "Disabled",
+              "no": "Deaktivert"
             }
           },
           {
             "id": "enabled",
             "label": {
-              "en": "Enabled"
+              "en": "Enabled",
+              "no": "Aktivert"
             }
           }
         ]
@@ -338,19 +375,22 @@
         "type": "dropdown",
         "value": "latestMode",
         "label": {
-          "en": "Power up status"
+          "en": "Power up status",
+          "no": "Oppstartmodus ved strømbrudd"
         },
         "values": [
           {
             "id": "latestMode",
             "label": {
-              "en": "Latest mode"
+              "en": "Latest mode",
+              "no": "Siste modus"
             }
           },
           {
             "id": "manualMode",
             "label": {
-              "en": "Manual mode"
+              "en": "Manual mode",
+              "no": "Manuell"
             }
           }
         ]
@@ -360,19 +400,22 @@
         "type": "dropdown",
         "value": "enabled",
         "label": {
-          "en": "Window open check"
+          "en": "Window open check",
+          "no": "Åpent-vindu-funksjon"
         },
         "values": [
           {
             "id": "enabled",
             "label": {
-              "en": "Enabled"
+              "en": "Enabled",
+              "no": "Aktivert"
             }
           },
           {
             "id": "disabled",
             "label": {
-              "en": "Disabled"
+              "en": "Disabled",
+              "no": "Deaktivert"
             }
           }
         ]
@@ -381,7 +424,8 @@
         "id": "hysteresis",
         "type": "number",
         "label": {
-          "en": "Hysteresis"
+          "en": "Hysteresis",
+          "no": "Hysterese"
         },
         "value": 0.5,
         "min": 0.5,
@@ -394,7 +438,8 @@
         "id": "localTemperatureCalibration",
         "type": "number",
         "label": {
-          "en": "Local Temperature Calibration"
+          "en": "Local Temperature Calibration",
+          "no": "Kalibrer temperatursensor"
         },
         "value": 0,
         "min": -49,
@@ -408,19 +453,22 @@
         "type": "dropdown",
         "value": "noLockout",
         "label": {
-          "en": "Keypad Lockout"
+          "en": "Keypad Lockout",
+          "no": "Barnesikring"
         },
         "values": [
           {
             "id": "noLockout",
             "label": {
-              "en": "No lockout"
+              "en": "No lockout",
+              "no": "Deaktivert"
             }
           },
           {
             "id": "level1Lockout",
             "label": {
-              "en": "Lockout"
+              "en": "Lockout",
+              "no": "Aktivert"
             }
           }
         ]
@@ -430,7 +478,8 @@
         "type": "checkbox",
         "value": false,
         "label": {
-          "en": "Sync time on device"
+          "en": "Sync time on device",
+          "no": "Synkroniser tid"
         }
       }
     ]

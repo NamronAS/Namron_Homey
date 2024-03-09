@@ -1,6 +1,7 @@
 {
   "title": {
-    "en": "Mode"
+    "en": "Mode",
+    "no": "Modus"
   },
   "type": "enum",
   "setable": true,
@@ -10,19 +11,22 @@
     {
       "id": "off",
       "title": {
-        "en": "Off"
+        "en": "Off",
+        "no": "Av"
       }
     },
     {
       "id": "heat",
       "title": {
-        "en": "Manual"
+        "en": "Manual",
+        "no": "Manuell"
       }
     },
     {
       "id": "auto",
       "title": {
-        "en": "Auto"
+        "en": "Auto",
+        "no": "Auto"
       }
     }
   ]

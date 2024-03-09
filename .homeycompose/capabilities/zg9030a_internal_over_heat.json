@@ -1,6 +1,7 @@
 {
   "title": {
-    "en": "Internal over heat"
+    "en": "Internal over heat",
+    "no": "Intern overoppheting"
   },
   "type": "string",
   "setable": true,
